@@ -16,5 +16,11 @@
     "title": "Inventory Management System",
     "description": "A C# application for managing store inventories, supporting CRUD operations for tracking products efficiently.",
     "img": "https://i.ibb.co.com/Hz4fn27/Whats-App-Image-2024-12-07-at-1-27-29-PM.jpg"
+  },
+  {
+    "id": 4,
+    "title": "new Management System",
+    "description": "A C# application for managing store inventories, supporting CRUD operations for tracking products efficiently.",
+    "img": "https://i.ibb.co.com/Hz4fn27/Whats-App-Image-2024-12-07-at-1-27-29-PM.jpg"
   }
 ]
