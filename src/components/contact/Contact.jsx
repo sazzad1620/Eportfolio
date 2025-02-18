@@ -51,7 +51,7 @@ const Contact = () => {
         >
           sazzad1620@gmail.com
         </a>
-        <p className="my-4">Dhaka,Bangladesh</p>
+        <p className="my-4">Dhaka, Bangladesh</p>
       </div>
     </div>
   );
