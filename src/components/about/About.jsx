@@ -29,7 +29,7 @@ const About = () => {
             >
               Hello, I’m Md. Sazzad Hossain, a passionate and aspiring mobile
               app developer with a strong foundation in Computer Science and
-              Engineering. Currently in my 10th semester at American
+              Engineering. Currently in my 9th semester at American
               International University–Bangladesh. I have developed hands-on
               experience in Object-Oriented Programming, competitive
               programming, and Flutter app development. I’ve worked on various
