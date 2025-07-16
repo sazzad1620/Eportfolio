@@ -20,6 +20,30 @@ const projectData = [
   },
   {
     id: "2",
+    title: "Library Hub ",
+    description:
+      "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
+    details:
+      "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
+    imgs: [
+      "https://i.ibb.co.com/SXWqnsV3/IMG-20250716-WA0002.jpg", //1
+      "https://i.ibb.co.com/ccrN1PF1/IMG-20250716-WA0003.jpg", //2
+      "https://i.ibb.co.com/0yjFbhwd/IMG-20250716-WA0004.jpg", //3
+      "https://i.ibb.co.com/FLBqW7xm/IMG-20250716-WA0005.jpg", //4
+      "https://i.ibb.co.com/8yLn7Qn/IMG-20250716-WA0006.jpg", //5
+      "https://i.ibb.co.com/27SXc0pR/IMG-20250716-WA0007.jpg", //6
+      "https://i.ibb.co.com/pBfSTvH6/IMG-20250716-WA0008.jpg", //7
+      "https://i.ibb.co.com/qM41knRZ/IMG-20250716-WA0009.jpg", //8
+      "https://i.ibb.co.com/GfB9nPjC/IMG-20250716-WA0010.jpg", //9
+      "https://i.ibb.co.com/Jwgx92G4/IMG-20250716-WA0011.jpg", //10
+      "https://i.ibb.co.com/h1Y0vfH0/IMG-20250716-WA0012.jpg", //11
+      "https://i.ibb.co.com/bjh04ZDy/IMG-20250716-WA0013.jpg", //12
+      "https://i.ibb.co.com/mrM1Dxs1/IMG-20250716-WA0014.jpg", //13
+      "https://i.ibb.co.com/Z60Xg9CT/IMG-20250716-WA0015.jpg", //14
+    ],
+  },
+  {
+    id: "3",
     title: "UniGuide ",
     description:
       "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
@@ -39,7 +63,7 @@ const projectData = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "Inventory Management System ",
     description:
       "A C# application for managing store inventories, supporting CRUD operations for tracking products efficiently.",
