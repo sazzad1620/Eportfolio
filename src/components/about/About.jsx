@@ -35,7 +35,7 @@ const About = () => {
               programming, and Flutter app development. I’ve worked on various
               projects that showcase my skills, including UniGuide, a university
               admission guide app built in Java, a Roll Dice App created using
-              Flutter and a Inventory Management System using C#. Through these
+              Flutter and a Inventory Management System using C# and Library Hub, a web-based library management system that I developed independently using NestJS for the backend and Next.js for the frontend, featuring robust role-based access for admin, librarian, and student users. Through these
               projects, I have honed my technical abilities, problem-solving
               skills, and creativity in building efficient and user-friendly
               applications. In addition to my technical expertise, I have
