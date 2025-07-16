@@ -37,8 +37,7 @@ const Banner = () => {
             animate="visible"
             className="text-3xl font-bold pt-6 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent  text-justify"
           >
-            A Flutter Mobile App Developer passionate about creating seamless,
-            user-focused mobile experiences.
+            Passionate about creating seamless, user-focused experiences.
           </motion.h2>
           {/* p  */}
           <motion.p
@@ -47,9 +46,9 @@ const Banner = () => {
             animate="visible"
             className="py-6 text-[20.3px]  text-justify "
           >
-            As a passionate and dedicated Flutter developer, I aim to create
-            innovative and user-friendly mobile applications that solve
-            real-world problems. With a strong foundation in Flutter development
+            As a passionate and dedicated developer, I aim to create
+            innovative and user-friendly applications that solve
+            real-world problems. With a strong foundation in development
             and a commitment to continuous learning, I strive to contribute to
             dynamic projects and grow as a developer while delivering
             high-quality, efficient solutions.
