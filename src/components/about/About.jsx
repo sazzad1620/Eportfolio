@@ -27,8 +27,7 @@ const About = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Hello, I’m Md. Sazzad Hossain, a passionate and aspiring mobile
-              app developer with a strong foundation in Computer Science and
+              Hello, I’m Md. Sazzad Hossain, a passionate and aspiring developer with a strong foundation in Computer Science and
               Engineering. Currently in my 10th semester at American
               International University–Bangladesh. I have developed hands-on
               experience in Object-Oriented Programming, competitive
