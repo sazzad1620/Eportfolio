@@ -8,7 +8,7 @@
   {
     "id": 2,
     "title": "LibraryHub ",
-    "description": "A feature-rich, role-based library management system built with NestJS and Next.js, supporting real-time operations, secure access control, and user-friendly workflows.",
+    "description": "A role-based library management system built with NestJS and Next.js, supporting real-time coordination and secure user workflows.",
     "img": "https://i.ibb.co.com/bjh04ZDy/IMG-20250716-WA0013.jpg"
   },
   {
