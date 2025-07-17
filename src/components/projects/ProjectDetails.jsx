@@ -1,110 +1,26 @@
-import React from "react";
-import { Link, useParams } from "react-router"; // Corrected the import for `useParams`
-
-const projectData = [
-  {
-    id: "1",
-    title: "Dice Roller App ",
-    description:
-      "A simple mobile app that simulates rolling a dice, displaying a random dice side when a button is pressed.",
-    details:
-      "The Dice Roller App is a lightweight mobile application developed using Flutter and Dart, designed for entertainment and simplicity. The core functionality involves generating a random number between 1 and 6 whenever the user presses the roll button, simulating the rolling of a standard dice. The app dynamically updates the displayed dice image to correspond with the generated number, providing a realistic dice-rolling experience. Built with Flutter's intuitive UI components, this app delivers a responsive and visually appealing interface. Its clean and efficient code structure ensures smooth performance across various mobile devices. The Dice Roller App serves as an excellent showcase of Flutter's capabilities for creating engaging mobile applications with minimal resources.",
-    imgs: [
-      "https://i.ibb.co.com/1MxSScD/Whats-App-Image-2024-12-07-at-12-00-22-PM-2.jpg",
-      "https://i.ibb.co.com/T4swFB8/Whats-App-Image-2024-12-07-at-12-00-22-PM-1.jpg",
-      "https://i.ibb.co.com/Yt8Zcbj/Whats-App-Image-2024-12-07-at-12-00-23-PM.jpg",
-      "https://i.ibb.co.com/WyxknYL/Whats-App-Image-2024-12-07-at-12-00-22-PM.jpg",
-      "https://i.ibb.co.com/hdBgQ2m/Whats-App-Image-2024-12-07-at-12-00-23-PM-2.jpg",
-      "https://i.ibb.co.com/s9Y1K4Y/Whats-App-Image-2024-12-07-at-12-00-23-PM-1.jpg",
-    ],
-  },
-  {
-    id: "2",
-    title: "Library Hub ",
-    description:
-      "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
-    details:
-      "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
-    imgs: [
-      "https://i.ibb.co.com/SXWqnsV3/IMG-20250716-WA0002.jpg", //1
-      "https://i.ibb.co.com/ccrN1PF1/IMG-20250716-WA0003.jpg", //2
-      "https://i.ibb.co.com/0yjFbhwd/IMG-20250716-WA0004.jpg", //3
-      "https://i.ibb.co.com/FLBqW7xm/IMG-20250716-WA0005.jpg", //4
-      "https://i.ibb.co.com/8yLn7Qn/IMG-20250716-WA0006.jpg", //5
-      "https://i.ibb.co.com/27SXc0pR/IMG-20250716-WA0007.jpg", //6
-      "https://i.ibb.co.com/pBfSTvH6/IMG-20250716-WA0008.jpg", //7
-      "https://i.ibb.co.com/qM41knRZ/IMG-20250716-WA0009.jpg", //8
-      "https://i.ibb.co.com/GfB9nPjC/IMG-20250716-WA0010.jpg", //9
-      "https://i.ibb.co.com/Jwgx92G4/IMG-20250716-WA0011.jpg", //10
-      "https://i.ibb.co.com/h1Y0vfH0/IMG-20250716-WA0012.jpg", //11
-      "https://i.ibb.co.com/bjh04ZDy/IMG-20250716-WA0013.jpg", //12
-      "https://i.ibb.co.com/mrM1Dxs1/IMG-20250716-WA0014.jpg", //13
-      "https://i.ibb.co.com/Z60Xg9CT/IMG-20250716-WA0015.jpg", //14
-    ],
-  },
-  {
-    id: "3",
-    title: "UniGuide ",
-    description:
-      "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
-    details:
-      "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
-    imgs: [
-      "https://i.ibb.co.com/p0wvKbT/7872e67f-a32b-4993-b367-0b7703b1a749.jpg", //1
-      "https://i.ibb.co.com/gM2YGsC/f3e96807-e299-46ca-bdce-1f166fb37037.jpg", //2
-
-      "https://i.ibb.co.com/9T3m488/811d8561-6d41-4d07-a474-388e470742b4.jpg", //3
-
-      "https://i.ibb.co.com/z6zbxx1/588bc5fe-5b92-4656-8afa-ba70828d3bff.jpg", //4
-      " https://i.ibb.co.com/xCqzLfx/Whats-App-Image-2024-12-07-at-1-19-23-PM.jpg", //5
-      "https://i.ibb.co.com/JHm01P7/03894f18-67cb-45fd-8606-370489285729.jpg", //6
-      "https://i.ibb.co.com/QKV16dx/7636b477-a74c-45f3-a619-5666f06623c9.jpg", //7
-      "https://i.ibb.co.com/mvQdtWq/Whats-App-Image-2024-12-07-at-1-19-23-PM-1.jpg", //8
-    ],
-  },
-  {
-    id: "4",
-    title: "Inventory Management System ",
-    description:
-      "A C# application for managing store inventories, supporting CRUD operations for tracking products efficiently.",
-    details:
-      "The Inventory Management System is a robust application developed in C# to simplify store management tasks. It enables users to perform essential operations, including creating, reading, updating, and deleting product records. Each product is assigned a unique ID, ensuring accurate tracking and management. The system allows store owners to monitor stock levels, organize product details, and streamline inventory processes effectively. With a focus on ease of use, the application features a clean interface that minimizes the learning curve for non-technical users. It incorporates error-handling mechanisms to prevent data inconsistencies and ensure reliability. The project is an excellent example of how C# can be utilized to build practical solutions for small to medium-sized businesses, highlighting my ability to develop applications that address real-world business needs",
-    imgs: [
-      "https://i.ibb.co.com/Hz4fn27/Whats-App-Image-2024-12-07-at-1-27-29-PM.jpg",
-      "https://i.ibb.co.com/bRVMTRT/Whats-App-Image-2024-12-07-at-1-27-30-PM.jpg",
-      "https://i.ibb.co.com/kgm0NSW/Whats-App-Image-2024-12-07-at-1-27-30-PM-1.jpg",
-      "https://i.ibb.co.com/z2rYc4x/Whats-App-Image-2024-12-07-at-1-27-30-PM-2.jpg",
-      "https://i.ibb.co.com/D5fwXRk/Whats-App-Image-2024-12-07-at-1-27-31-PM.jpg",
-      "https://i.ibb.co.com/yqD9qSw/Whats-App-Image-2024-12-07-at-1-27-31-PM-1.jpg",
-      "https://i.ibb.co.com/Qkh3ntY/Whats-App-Image-2024-12-07-at-1-27-31-PM-2.jpg",
-      "https://i.ibb.co.com/BNGdtn3/Whats-App-Image-2024-12-13-at-2-06-41-AM.jpg",
-    ],
-  },
-];
+import { Link, useLocation } from "react-router"; // Correct import
 
 const ProjectDetails = () => {
-  const { id } = useParams();
-  const project = projectData.find((p) => p.id === id); // Find the project by id
+  const location = useLocation();
+  const { item } = location.state || {};
 
-  if (!project) {
-    return <h2>Project Not Found</h2>;
-  }
+  if (!item) return <div>Item not found</div>;
 
   return (
     <div className="container mx-auto max-w-7xl mt-8">
       <div className="images grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
-        {project.imgs.length > 0 ? (
-          project.imgs.map((img, index) => (
-            <img key={index} src={img} alt={project.title} />
+        {item.imgs?.length > 0 ? (
+          item.imgs.map((img, index) => (
+            <img key={index} src={img} alt={item.title} />
           ))
         ) : (
-          <p>No images available for this project.</p>
+          <img src={item.head} alt={item.title} />
         )}
       </div>
       <div className="text">
-        <h1 className="font-bold text-2xl">{project.title}</h1>
-        <p className="py-6 font-semibold text-xl">{project.description}</p>
-        <p>{project.details}</p>
+        <h1 className="font-bold text-2xl">{item.title}</h1>
+        <p className="py-6 font-semibold text-xl">{item.description}</p>
+        {item.details && <p>{item.details}</p>}
         <Link to="/projects">
           <button className="btn mt-5">Back</button>
         </Link>

@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 const Project = ({ item }) => {
-  const { id, title, img, description } = item;
+  const { id, title, head, description } = item;
   return (
-    <Link to={`/projects/${id}`}>
+    <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
         <div className="w-full lg:w-1/3">
           <motion.img
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src={img}
+            src={head}
             alt={title}
             className="mb-6 rounded"
             width={300}
