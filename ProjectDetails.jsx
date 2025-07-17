@@ -20,9 +20,9 @@ const projectData = [
   },
   {
     id: "2",
-    title: "Library Hub ",
+    title: "LibraryHub ",
     description:
-      "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
+      "A feature-rich, role-based library management system built with NestJS and Next.js, supporting real-time operations, secure access control, and user-friendly workflows.",
     details:
       "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
     imgs: [
