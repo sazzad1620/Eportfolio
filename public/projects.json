@@ -7,8 +7,8 @@
   },
   {
     "id": 2,
-    "title": "Library Hub ",
-    "description": "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
+    "title": "LibraryHub ",
+    "description": "A feature-rich, role-based library management system built with NestJS and Next.js, supporting real-time operations, secure access control, and user-friendly workflows.",
     "img": "https://i.ibb.co.com/bjh04ZDy/IMG-20250716-WA0013.jpg"
   },
   {
