@@ -74,14 +74,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-start my-5">
-        {/* Mobile Slider Button */}
+        {/* Mobile Hamburger Button */}
         <button
           onClick={() => setIsOpen(true)}
-          className="btn btn-ghost lg:hidden"
+          className="btn btn-ghost lg:hidden text-3xl p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-8 w-8" // increased size
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -107,7 +107,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile Slider */}
+      {/* Mobile Sidebar */}
       <div
         className={`fixed inset-0 z-50 transition-opacity duration-300 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -121,11 +121,14 @@ const Navbar = () => {
 
         {/* Sidebar */}
         <div
-          className={`absolute left-0 top-0 h-full w-64 bg-base-100 shadow-xl p-4 transform transition-transform duration-300 ${
+          className={`absolute left-0 top-0 h-full w-64 bg-gray-900 text-white shadow-xl p-4 transform transition-transform duration-300 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <button className="btn btn-ghost mb-4" onClick={handleClose}>
+          <button
+            className="btn btn-ghost mb-4 text-white text-2xl"
+            onClick={handleClose}
+          >
             ✕
           </button>
           <ul className="menu text-xl">{list}</ul>
