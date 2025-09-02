@@ -3,19 +3,29 @@ import { Link } from "react-router";
 
 const Project = ({ item }) => {
   const { id, title, head, description } = item;
+
+  // Ensure head is an array
+  const images = Array.isArray(head) ? head : [head];
+
   return (
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
-        <div className="w-full lg:w-1/3">
-          <motion.img
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            src={head}
-            alt={title}
-            className="mb-6 rounded object-cover w-[300px] h-[200px]"
-          />
+        {/* Image carousel / multiple preview */}
+        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
+          {images.map((img, index) => (
+            <motion.img
+              key={index}
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              src={img}
+              alt={`${title} preview ${index + 1}`}
+              className="mb-6 rounded object-cover w-[300px] h-[200px] flex-shrink-0"
+            />
+          ))}
         </div>
+
+        {/* Text info */}
         <motion.div
           className="w-full max-w-xl lg:w-1/4"
           initial={{ x: 100, opacity: 0 }}
