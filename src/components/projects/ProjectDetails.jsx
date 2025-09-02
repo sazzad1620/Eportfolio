@@ -38,7 +38,7 @@ const ProjectDetails = () => {
               key={index}
               src={img}
               alt={item.title}
-              className="w-full h-auto object-cover rounded-lx shadow-md"
+              className="w-full h-auto object-cover rounded-xl shadow-md"
             />
           ))
         ) : (
