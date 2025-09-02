@@ -73,7 +73,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-start my-5">
+      <div className="navbar-start my-5 lg:my-5 pl-2 lg:pl-0">
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setIsOpen(true)}
