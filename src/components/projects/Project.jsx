@@ -10,8 +10,8 @@ const Project = ({ item }) => {
   return (
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
-        {/* Image carousel / multiple preview */}
-        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
+        {/* Image container */}
+        <div className="w-full lg:w-1/3 grid grid-cols-2 gap-2 overflow-x-auto">
           {images.map((img, index) => (
             <motion.img
               key={index}
@@ -20,14 +20,14 @@ const Project = ({ item }) => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               src={img}
               alt={`${title} preview ${index + 1}`}
-              className="mb-6 rounded object-cover w-[300px] h-[200px] flex-shrink-0"
+              className="rounded object-contain w-full max-h-[180px]"
             />
           ))}
         </div>
 
         {/* Text info */}
         <motion.div
-          className="w-full max-w-xl lg:w-1/4"
+          className="w-full max-w-xl lg:w-1/4 mt-4 lg:mt-0 lg:ml-6"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
