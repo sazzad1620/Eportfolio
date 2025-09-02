@@ -10,8 +10,8 @@ const Project = ({ item }) => {
   return (
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
-        {/* Image container */}
-        <div className="w-full lg:w-1/3 grid grid-cols-2 gap-2 overflow-x-auto">
+        {/* Horizontal image row */}
+        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
           {images.map((img, index) => (
             <motion.img
               key={index}
@@ -20,7 +20,7 @@ const Project = ({ item }) => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               src={img}
               alt={`${title} preview ${index + 1}`}
-              className="rounded object-contain w-full max-h-[180px]"
+              className="rounded object-contain w-[140px] h-[180px] flex-shrink-0"
             />
           ))}
         </div>
