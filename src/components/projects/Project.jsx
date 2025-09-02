@@ -7,22 +7,40 @@ const Project = ({ item }) => {
   // Ensure head is an array
   const images = Array.isArray(head) ? head : [head];
 
+  // Check if multiple images exist (like vertical 3-image project)
+  const isMultiImage = images.length > 1;
+
   return (
     <Link to={`/projects/${id}`} state={{ item }}>
-      <div className="mb-8 flex flex-wrap lg:justify-center">
-        {/* Horizontal image row */}
-        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
-          {images.map((img, index) => (
-            <motion.img
-              key={index}
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              src={img}
-              alt={`${title} preview ${index + 1}`}
-              className="rounded object-contain w-[140px] h-[180px] flex-shrink-0"
-            />
-          ))}
+      <div className="mb-8 flex flex-wrap lg:justify-center items-start">
+        {/* Image section */}
+        <div
+          className={`${
+            isMultiImage ? "w-full lg:w-1/3 flex gap-2" : "w-full lg:w-1/3"
+          }`}
+        >
+          {images.map((img, index) =>
+            isMultiImage ? (
+              // For multi-image project: small row images, no animation
+              <img
+                key={index}
+                src={img}
+                alt={`${title} preview ${index + 1}`}
+                className="rounded object-contain w-[140px] h-[180px]"
+              />
+            ) : (
+              // For single image project: original bigger size with animation
+              <motion.img
+                key={index}
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                src={img}
+                alt={title}
+                className="mb-6 rounded object-cover w-[300px] h-[200px]"
+              />
+            )
+          )}
         </div>
 
         {/* Text info */}
