@@ -5,7 +5,7 @@
     "description": "A modern steakhouse app built with Flutter, featuring dark mode, dynamic cart, and secure payment integration.",
     "details": "Firewood Steakhouse is a Flutter-based mobile application aimed at enhancing the food ordering experience. The app organizes food into four categories—steaks, platters, desserts, and drinks allowing users to switch between them easily via a tab bar. Each item provides detailed information, including price, description, and available addons, giving users full customization options. The app supports both dark and light modes for a comfortable viewing experience, and includes location selection (under development) for future location-based services and order tracking. A fully functional cart system ensures smooth order management, letting users add, update, or remove items dynamically. For real-world payment functionality, the app integrates bKash and SSLCOMMERZ, processing payments at actual item prices. The backend connection with Firebase is currently in progress, which will manage user authentication, order storage, and real-time updates. This project demonstrates practical skills in Flutter development, UI/UX design, payment gateway integration, and backend connectivity, reflecting the ability to build a secure, modern, and user-friendly food delivery application suitable for real-world use.",
 
-    "head": "https://ibb.co.com/HfGcKj1v",
+    "head": "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
     "imgs": [
       "https://ibb.co.com/HfGcKj1v,",
       "https://i.ibb.co.com/T4swFB8/Whats-App-Image-2024-12-07-at-12-00-22-PM-1.jpg",
