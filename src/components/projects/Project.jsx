@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+
 const Project = ({ item }) => {
   const { id, title, head, description } = item;
   return (
@@ -12,9 +13,7 @@ const Project = ({ item }) => {
             transition={{ duration: 0.5 }}
             src={head}
             alt={title}
-            className="mb-6 rounded"
-            width={300}
-            height={300}
+            className="mb-6 rounded object-cover w-[300px] h-[200px]"
           />
         </div>
         <motion.div
