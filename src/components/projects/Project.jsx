@@ -10,7 +10,7 @@ const Project = ({ item }) => {
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
         {/* Image carousel / multiple preview */}
-        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
+        <div className="w-full lg:w-1/3 flex gap-3 overflow-x-auto">
           {images.map((img, index) => (
             <motion.img
               key={index}
