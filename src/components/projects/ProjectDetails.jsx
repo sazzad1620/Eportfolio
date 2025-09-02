@@ -18,8 +18,9 @@ const ProjectDetails = () => {
 
   // Decide number of columns
   const colsClass = isVerticalProject
-    ? "grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6"
-    : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+  ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4" // 4 per row on medium and large screens
+  : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+
 
   return (
     <div className="container mx-auto max-w-7xl mt-8 px-4">
