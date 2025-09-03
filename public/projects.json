@@ -46,6 +46,27 @@
   },
   {
     "id": 3,
+    "title": "Fabrino ",
+    "description": "A simple, scalable, and user-friendly e-commerce app designed to make online shopping effortless, organized, and enjoyable.",
+    "details": "Fabrino is a mobile e-commerce application designed for clothing and accessories, offering a smooth and organized shopping experience for both men and women. The app categorizes products into sections such as T-shirts, jeans, Punjabi, Kurti, pants, wallets, and face masks, allowing users to quickly explore their preferred items. Each product provides essential details including name, price, image, and available sizes, helping customers make informed choices with ease. A clean and scrollable interface ensures clarity, while smooth navigation allows users to move effortlessly between categories and product pages. A key feature of Fabrino is its multi-size support, enabling users to check size availability before purchase, which enhances convenience and efficiency. The project emphasizes simplicity and usability, making shopping straightforward and enjoyable. Planned future enhancements include implementing user registration and login, enabling account creation, shopping cart management, and a streamlined checkout system. Integration with a real database is also planned, allowing user information and purchase history to be stored securely, making the app fully functional in real-world scenarios. Overall, Fabrino demonstrates the development of a user-friendly, expandable e-commerce solution that combines organized product management, seamless navigation, and a strong foundation for future scalability.",
+    "isVertical": true,
+    "head": [
+      "https://i.ibb.co.com/rBKgn0G/fabrino1.png",
+      "https://i.ibb.co.com/Zp99DfGC/fabrino2.png",
+      "https://i.ibb.co.com/XfcH1QXM/fabrino6.png"
+    ],
+    "imgs": [
+      "https://i.ibb.co.com/rBKgn0G/fabrino1.png",
+      "https://i.ibb.co.com/Zp99DfGC/fabrino2.png",
+      "https://i.ibb.co.com/7xvYDvFd/fabrino3.png",
+      "https://i.ibb.co.com/DD4ZDD4v/fabrino4.png",
+      "https://i.ibb.co.com/WNvyHtKP/fabrino5.png",
+      "https://i.ibb.co.com/XfcH1QXM/fabrino6.png"
+    ]
+  },
+  
+  {
+    "id": 4,
     "title": "LibraryHub ",
     "description": "A role-based library management system built with NestJS and Next.js, supporting real-time coordination and secure user workflows.",
     "details": "LibraryHub is a comprehensive full-stack library management system developed using NestJS for the backend and Next.js for the frontend. It is designed to streamline library operations through real-time synchronization and role-based access control. The system supports three user roles: Admin, Librarian, and Student, each having a separate dashboard with their specific functionalities. Admins can approve or reject newly registered librarians, manage users, add, update, and delete books, change transaction statuses like issue or return, and temporarily block students. Librarians can manage the book inventory, handle book requests from students, and carry out regular library tasks after admin approval. Students can view available books, send book requests, and track their request and transaction statuses. The system features secure authentication using JWT, OTP-based password reset via email, and profile management for all users. All actions are instantly synchronized across the system to ensure real-time updates. This project demonstrates seamless frontend-backend integration, clean API design, and a focus on usability, security, and maintainability.",
@@ -68,7 +89,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "UniGuide ",
     "description": "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
     "details": "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
@@ -87,7 +108,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Inventory Management System",
     "description": "A C# application for managing store inventories, supporting CRUD operations for tracking products efficiently.",
     "details": "The Inventory Management System is a robust application developed in C# to simplify store management tasks. It enables users to perform essential operations, including creating, reading, updating, and deleting product records. Each product is assigned a unique ID, ensuring accurate tracking and management. The system allows store owners to monitor stock levels, organize product details, and streamline inventory processes effectively. With a focus on ease of use, the application features a clean interface that minimizes the learning curve for non-technical users. It incorporates error-handling mechanisms to prevent data inconsistencies and ensure reliability. The project is an excellent example of how C# can be utilized to build practical solutions for small to medium-sized businesses, highlighting my ability to develop applications that address real-world business needs",
