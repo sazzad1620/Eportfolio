@@ -20,10 +20,10 @@ const Project = ({ item }) => {
               transition={{ duration: 0.4 }}
               src={img}
               alt={title}
-              className={`mb-6 rounded-lg shadow-md 
+              className={`mb-6 rounded-xl shadow-md 
                 ${isVertical 
-                  ? "w-[120px] h-[220px] object-contain"   // Vertical images → tall & slimmer
-                  : "w-[300px] h-[200px] object-cover"}   // Horizontal images → wide & cropped
+                  ? "w-[120px] h-[220px] object-contain"   // vertical → no crop, slim/tall
+                  : "w-[300px] h-[200px] object-cover"}   // horizontal → wide, cropped
               `}
             />
           ))}
