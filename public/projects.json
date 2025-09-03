@@ -32,7 +32,7 @@
   {
     "id": 2,
     "title": "Dice Roller App ",
-    "description": "A simple mobile app that simulates rolling a dice, displaying a random dice side when a button is pressed.",
+    "description": "A simple mobile app built with Flutter, that simulates rolling a dice, displaying a random dice side when a button is pressed.",
     "details": "The Dice Roller App is a lightweight mobile application developed using Flutter and Dart, designed for entertainment and simplicity. The core functionality involves generating a random number between 1 and 6 whenever the user presses the roll button, simulating the rolling of a standard dice. The app dynamically updates the displayed dice image to correspond with the generated number, providing a realistic dice-rolling experience. Built with Flutter's intuitive UI components, this app delivers a responsive and visually appealing interface. Its clean and efficient code structure ensures smooth performance across various mobile devices. The Dice Roller App serves as an excellent showcase of Flutter's capabilities for creating engaging mobile applications with minimal resources.",
     "head": "https://i.ibb.co.com/1MxSScD/Whats-App-Image-2024-12-07-at-12-00-22-PM-2.jpg",
     "imgs": [
@@ -47,7 +47,7 @@
   {
     "id": 3,
     "title": "Fabrino ",
-    "description": "A simple, scalable, and user-friendly e-commerce app designed to make online shopping effortless, organized, and enjoyable.",
+    "description": "A simple, scalable, and user-friendly e-commerce app designed with Kotlin to make online shopping effortless, organized, and enjoyable.",
     "details": "Fabrino is a mobile e-commerce application designed for clothing and accessories, offering a smooth and organized shopping experience for both men and women. The app categorizes products into sections such as T-shirts, jeans, Punjabi, Kurti, pants, wallets, and face masks, allowing users to quickly explore their preferred items. Each product provides essential details including name, price, image, and available sizes, helping customers make informed choices with ease. A clean and scrollable interface ensures clarity, while smooth navigation allows users to move effortlessly between categories and product pages. A key feature of Fabrino is its multi-size support, enabling users to check size availability before purchase, which enhances convenience and efficiency. The project emphasizes simplicity and usability, making shopping straightforward and enjoyable. Planned future enhancements include implementing user registration and login, enabling account creation, shopping cart management, and a streamlined checkout system. Integration with a real database is also planned, allowing user information and purchase history to be stored securely, making the app fully functional in real-world scenarios. Overall, Fabrino demonstrates the development of a user-friendly, expandable e-commerce solution that combines organized product management, seamless navigation, and a strong foundation for future scalability.",
     "isVertical": true,
     "head": [
