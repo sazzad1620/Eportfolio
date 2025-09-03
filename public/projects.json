@@ -91,7 +91,7 @@
   {
     "id": 5,
     "title": "UniGuide ",
-    "description": "An app designed to help students select suitable universities, currently focused on universities in Bangladesh.",
+    "description": "An java app design to help students select suitable universities, currently focused on universities in Bangladesh.",
     "details": "UniGuide is a Java-based application tailored to assist students in making informed decisions about their higher education. This application provides a curated list of universities in Bangladesh, along with detailed information such as courses offered, admission requirements, and rankings. It uses a structured data handling approach to manage large volumes of university data efficiently. The user-friendly interface allows students to search and filter universities based on specific criteria, such as location, field of study, or academic scores. Future updates aim to expand its scope to include universities from other countries, transforming it into a global university recommendation tool. UniGuide demonstrates the effective use of Java for managing data-heavy applications and highlights my commitment to addressing real-world challenges faced by students.",
     "head": "https://i.ibb.co.com/p0wvKbT/7872e67f-a32b-4993-b367-0b7703b1a749.jpg",
     "imgs": [
