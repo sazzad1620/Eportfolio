@@ -21,9 +21,10 @@ const Project = ({ item }) => {
               alt={`${title} preview ${index + 1}`}
               className={`rounded-xl flex-shrink-0 
                 ${isVertical 
-                  ? "object-contain h-[220px] w-auto"  // Fix: maintain aspect ratio, no crop
+                  ? "object-contain h-[220px] w-auto"  // Vertical: fit height, auto width
                   : "object-cover max-w-[330px] max-h-[230px]"}`
               }
+              style={{ minWidth: isVertical ? '120px' : undefined }} // prevent collapsing for vertical images
             />
           ))}
         </div>
