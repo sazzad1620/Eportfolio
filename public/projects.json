@@ -6,23 +6,27 @@
     "details": "Firewood Steakhouse is a Flutter-based mobile application aimed at enhancing the food ordering experience. The app organizes food into four categories—steaks, platters, desserts, and drinks allowing users to switch between them easily via a tab bar. Each item provides detailed information, including price, description, and available addons, giving users full customization options. The app supports both dark and light modes for a comfortable viewing experience, and includes location selection (under development) for future location-based services and order tracking. A fully functional cart system ensures smooth order management, letting users add, update, or remove items dynamically. For real-world payment functionality, the app integrates bKash and SSLCOMMERZ, processing payments at actual item prices. The backend connection with Firebase is currently in progress, which will manage user authentication, order storage, and real-time updates. This project demonstrates practical skills in Flutter development, UI/UX design, payment gateway integration, and backend connectivity, reflecting the ability to build a secure, modern, and user-friendly food delivery application suitable for real-world use.",
 
     "head": [
+      "https://i.ibb.co.com/TBqTry6C/steakhouse1.png",
       "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png"
+      "https://i.ibb.co.com/VWqWhqfy/steakhouse9.png"
     ],
     "imgs": [
+      "https://i.ibb.co.com/TBqTry6C/steakhouse1.png",
+      "https://i.ibb.co.com/v6ssCBFL/steakhouse2.png",
       "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png",
-      "https://i.ibb.co.com/cS2WyjM5/steakhouse3.png"
-      
-      
+      "https://i.ibb.co.com/q3McpwP5/steakhouse4.png",
+      "https://i.ibb.co.com/yFxFBpwQ/steakhouse5.png",
+      "https://i.ibb.co.com/GQtv2Gs2/steakhouse6.png",
+      "https://i.ibb.co.com/HfRD00sf/steakhouse7.png",
+      "https://i.ibb.co.com/Hfm93T12/steakhouse8.png",
+      "https://i.ibb.co.com/VWqWhqfy/steakhouse9.png",
+      "https://i.ibb.co.com/LXd4T5GD/steakhouse10.png",
+      "https://i.ibb.co.com/KxjxJtFz/steakhouse11.png",
+      "https://i.ibb.co.com/WvxJPf2X/steakhouse12.png",
+      "https://i.ibb.co.com/qYpjSMpS/steakhouse13.png",
+      "https://i.ibb.co.com/fdzShfb2/steakhouse14.png",
+      "https://i.ibb.co.com/27yzhdfn/steakhouse15.png",
+      "https://i.ibb.co.com/kVwbxXXG/steakhouse16.png"  
     ]
   },
   {
