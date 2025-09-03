@@ -2,34 +2,39 @@ import { motion } from "framer-motion";
 import { Link } from "react-router";
 
 const Project = ({ item }) => {
-  const { id, title, head, description } = item;
+  const { id, title, head, description, isVertical } = item;
 
-  const images = Array.isArray(head) ? head : [head];
+  // Ensure head is always an array
+  const headImages = Array.isArray(head) ? head : [head];
 
   return (
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
-        {/* Image carousel / multiple preview */}
-        <div className="w-full lg:w-1/3 flex gap-3 overflow-x-auto">
-          {images.map((img, index) => (
+        {/* Images */}
+        <div className="flex gap-3">
+          {headImages.map((img, index) => (
             <motion.img
               key={index}
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.4 }}
               src={img}
-              alt={`${title} preview ${index + 1}`}
-              className="rounded-lg object-contain max-w-[300px] max-h-[200px] flex-shrink-0"
+              alt={title}
+              className={`mb-6 rounded-lg shadow-md 
+                ${isVertical 
+                  ? "w-[120px] h-[220px] object-contain"   // Vertical images → tall & slimmer
+                  : "w-[300px] h-[200px] object-cover"}   // Horizontal images → wide & cropped
+              `}
             />
           ))}
         </div>
 
-        {/* Text info */}
+        {/* Text */}
         <motion.div
           className="w-full max-w-xl lg:w-1/4"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
         >
           <h6 className="mb-6 font-semibold text-xl">{title}</h6>
           <p className="mb-4 text-neutral-400">{description}</p>
