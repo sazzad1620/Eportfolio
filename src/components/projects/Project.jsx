@@ -10,7 +10,7 @@ const Project = ({ item }) => {
     <Link to={`/projects/${id}`} state={{ item }}>
       <div className="mb-8 flex flex-wrap lg:justify-center">
         {/* Image carousel / multiple preview */}
-        <div className="w-full lg:w-1/3 flex gap-3 overflow-x-auto">
+        <div className="w-full lg:w-1/3 flex gap-2 overflow-x-auto">
           {images.map((img, index) => (
             <motion.img
               key={index}
@@ -22,7 +22,7 @@ const Project = ({ item }) => {
               className={`rounded-xl flex-shrink-0 
                 ${isVertical 
                   ? "object-contain max-w-[120px] max-h-[220px]" 
-                  : "object-cover max-w-[400px] max-h-[300px]"}`
+                  : "object-cover max-w-[320px] max-h-[320px]"}`
               }
             />
           ))}
