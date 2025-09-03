@@ -41,14 +41,7 @@ const Skill = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                Proficient in building cross-platform mobile applications using
-                Flutter, with expertise in Dart programming. I specialize in
-                creating responsive, feature-rich applications with intuitive
-                user interfaces. I have hands-on experience integrating REST
-                APIs, implementing state management solutions like Provider, and
-                utilizing Firebase for backend services. My projects, such as
-                the Roll Dice App, highlight my ability to deliver engaging,
-                functional mobile apps.
+                Proficient in Flutter and Dart, specializing in building cross-platform mobile applications with clean, responsive, and user-friendly interfaces. Experienced in implementing dynamic cart systems, real-time backend integration using Firebase, and secure payment gateways like bKash and SSLCOMMERZ. Skilled in managing state, navigation, and complex UI components, as demonstrated in projects such as Firewood Steakhouse. Also experienced in implementing algorithms and Dart logic, including random number generation and interactive functionality, as showcased in the Dice Roller App. Capable of delivering fully functional, production-ready mobile applications.
               </motion.p>
             </div>
           </div>
