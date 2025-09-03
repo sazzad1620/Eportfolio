@@ -41,7 +41,7 @@ const Skill = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                Proficient in Flutter and Dart, specializing in building cross-platform mobile applications with clean, responsive, and user-friendly interfaces. Experienced in implementing dynamic cart systems, real-time backend integration using Firebase, and secure payment gateways like bKash and SSLCOMMERZ. Skilled in managing state, navigation, and complex UI components, as demonstrated in projects such as Firewood Steakhouse. Also experienced in implementing algorithms and Dart logic, including random number generation and interactive functionality, as showcased in the Dice Roller App. Capable of delivering fully functional, production-ready mobile applications.
+                Skilled in Flutter and Dart for building cross-platform mobile applications with responsive and user-friendly interfaces. Experienced in integrating Firebase for backend services, implementing payment gateways like bKash and SSLCOMMERZ, creating dynamic cart systems, managing state, and designing complex UI components as demonstrated in the Firewood Steakhouse app. Proficient in Dart programming and logic, including generating random numbers and interactive functionality, as applied in the Dice Roller app. Capable of delivering fully functional, production-ready mobile applications.
               </motion.p>
             </div>
           </div>
