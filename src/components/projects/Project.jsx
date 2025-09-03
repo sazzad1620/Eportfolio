@@ -21,7 +21,7 @@ const Project = ({ item }) => {
               alt={`${title} preview ${index + 1}`}
               className={`rounded-xl flex-shrink-0 
                 ${isVertical 
-                  ? "object-contain max-w-[120px] max-h-[220px]" 
+                  ? "object-contain h-[220px] w-auto"  // Fix: maintain aspect ratio, no crop
                   : "object-cover max-w-[330px] max-h-[230px]"}`
               }
             />
