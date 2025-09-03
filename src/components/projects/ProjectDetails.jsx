@@ -7,20 +7,13 @@ const ProjectDetails = () => {
   if (!item)
     return <div className="text-center mt-10 text-xl">Item not found</div>;
 
-  // Determine if project has mostly vertical images
-  const isVerticalProject =
-    item.imgs && item.imgs.length > 0
-      ? item.imgs.every((img) => {
-          // Simple check: if width < height in URL or you can adjust manually
-          return img.includes("steakhouse3") || img.includes("vertical"); 
-        })
-      : false;
+  // Use manual flag from JSON instead of guessing
+  const isVerticalProject = item.isVertical || false;
 
   // Decide number of columns
   const colsClass = isVerticalProject
-  ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4" // 4 per row on medium and large screens
-  : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
-
+    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6" // up to 6 in a row for vertical screenshots
+    : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
 
   return (
     <div className="container mx-auto max-w-7xl mt-8 px-4">
@@ -37,8 +30,10 @@ const ProjectDetails = () => {
             <img
               key={index}
               src={img}
-              alt={item.title}
-              className="w-full h-auto object-cover rounded-xl shadow-md"
+              alt={`${item.title} ${index + 1}`}
+              className={`w-full h-auto rounded-xl shadow-md ${
+                isVerticalProject ? "object-contain" : "object-cover"
+              }`}
             />
           ))
         ) : (
