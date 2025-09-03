@@ -22,7 +22,7 @@ const Project = ({ item }) => {
               className={`rounded-xl flex-shrink-0 
                 ${isVertical 
                   ? "object-contain max-w-[120px] max-h-[220px]" 
-                  : "object-cover max-w-[320px] max-h-[320px]"}`
+                  : "object-cover max-w-[330px] max-h-[230px]"}`
               }
             />
           ))}
